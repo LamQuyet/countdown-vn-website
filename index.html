@@ -12,6 +12,10 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
@@ -51,6 +55,7 @@
             padding: 40px;
             margin-bottom: 30px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            scroll-margin-top: 20px;
         }
 
         .section h2 {
@@ -205,7 +210,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>Đếm Ngược VN</h1>
+        <h1>Đếm Ngược Việt Nam</h1>
         <p>Trang hỗ trợ và thông tin chính thức</p>
     </div>
 
@@ -213,7 +218,7 @@
         <!-- Thông tin ứng dụng -->
         <div class="section">
             <h2>Về Ứng Dụng</h2>
-            <p>Đếm Ngược VN là ứng dụng giúp bạn theo dõi và đếm ngược đến các ngày lễ, sự kiện quan trọng của Việt Nam. Ứng dụng cung cấp thông tin chi tiết về các ngày lễ truyền thống và hiện đại, giúp bạn không bỏ lỡ những khoảnh khắc đặc biệt.</p>
+            <p>Đếm Ngược Việt Nam là ứng dụng giúp bạn theo dõi và đếm ngược đến các ngày lễ, sự kiện quan trọng của Việt Nam. Ứng dụng cung cấp thông tin chi tiết về các ngày lễ truyền thống và hiện đại, giúp bạn không bỏ lỡ những khoảnh khắc đặc biệt.</p>
             
             <h3>Tính năng chính</h3>
             <ul class="feature-list">
@@ -226,18 +231,18 @@
         </div>
 
         <!-- Liên hệ -->
-        <div class="section">
+        <div class="section" id="contact">
             <h2>Liên Hệ</h2>
             <p>Nếu bạn có câu hỏi, góp ý hoặc cần hỗ trợ, vui lòng liên hệ với chúng tôi qua các kênh sau:</p>
             
             <div class="contact-info">
                 <div class="contact-item">
                     <strong>Email hỗ trợ</strong>
-                    <a href="mailto:support@countdownvn.app">support@countdownvn.app</a>
+                    <a href="mailto:quyetkl9x@gmail.com">quyetkl9x@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <strong>Email liên hệ chung</strong>
-                    <a href="mailto:info@countdownvn.app">info@countdownvn.app</a>
+                    <a href="mailto:quyetkl9x@gmail.com">quyetkl9x@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <strong>Thời gian phản hồi</strong>
@@ -278,7 +283,7 @@
             <div class="faq-item">
                 <div class="faq-question">Ứng dụng có thu thập dữ liệu cá nhân không?</div>
                 <div class="faq-answer">
-                    Ứng dụng của chúng tôi tôn trọng quyền riêng tư của bạn. Chúng tôi chỉ thu thập dữ liệu cần thiết để cải thiện trải nghiệm người dùng và không chia sẻ thông tin với bên thứ ba. Xem thêm chi tiết trong Chính sách Bảo mật bên dưới.
+                    Không, chúng tôi KHÔNG thu thập bất kỳ thông tin nhận dạng cá nhân nào từ bạn. Chúng tôi chỉ thu thập dữ liệu sử dụng và dữ liệu thiết bị cơ bản để cải thiện trải nghiệm ứng dụng. Tất cả dữ liệu được lưu trữ cục bộ trên thiết bị của bạn. Xem thêm chi tiết trong Chính sách Bảo mật bên dưới.
                 </div>
             </div>
 
@@ -291,53 +296,75 @@
         </div>
 
         <!-- Chính sách bảo mật -->
-        <div class="section">
+        <div class="section" id="privacy">
             <h2>Chính Sách Bảo Mật</h2>
-            <p><strong>Cập nhật lần cuối:</strong> 2024</p>
+            <p><strong>Cập nhật lần cuối:</strong> 28/11/2025</p>
             
-            <h3>1. Thông tin chúng tôi thu thập</h3>
-            <p>Ứng dụng Đếm Ngược VN có thể thu thập thông tin sau:</p>
+            <div style="background: #e8f5e9; border-left: 4px solid #4caf50; padding: 15px; margin: 20px 0; border-radius: 8px;">
+                <p style="color: #1d1d1f; font-weight: 600; font-size: 18px; margin-bottom: 0;">
+                    Chúng tôi KHÔNG thu thập bất kỳ thông tin nhận dạng cá nhân nào từ bạn.
+                </p>
+            </div>
+
+            <div style="height: 1px; background: linear-gradient(to right, transparent, #d2d2d7, transparent); margin: 30px 0;"></div>
+
+            <h3>1. Giới Thiệu</h3>
+            <p>Ứng dụng "Đếm Ngược Việt Nam" cam kết bảo vệ quyền riêng tư của người dùng.</p>
+
+            <div style="height: 1px; background: linear-gradient(to right, transparent, #d2d2d7, transparent); margin: 30px 0;"></div>
+
+            <h3>2. Thông Tin Thu Thập</h3>
+            <p>Ứng dụng chỉ thu thập các thông tin sau:</p>
             <ul class="feature-list">
-                <li>Thông tin thiết bị (loại thiết bị, hệ điều hành)</li>
-                <li>Dữ liệu sử dụng ứng dụng (phiên bản ứng dụng, thời gian sử dụng)</li>
-                <li>Thông tin kỹ thuật để cải thiện hiệu suất</li>
+                <li><strong>Dữ liệu sử dụng:</strong> Thông tin về cách bạn sử dụng ứng dụng</li>
+                <li><strong>Dữ liệu thiết bị:</strong> Loại thiết bị, phiên bản hệ điều hành</li>
+            </ul>
+            <p style="margin-top: 15px; padding: 15px; background: #f5f5f7; border-radius: 8px; border-left: 4px solid #DA251D;">
+                <strong>Lưu ý quan trọng:</strong> Tất cả dữ liệu được lưu trữ cục bộ trên thiết bị của bạn.
+            </p>
+
+            <div style="height: 1px; background: linear-gradient(to right, transparent, #d2d2d7, transparent); margin: 30px 0;"></div>
+
+            <h3>3. Quảng Cáo</h3>
+            <p>Ứng dụng sử dụng Google AdMob để hiển thị quảng cáo.</p>
+
+            <div style="height: 1px; background: linear-gradient(to right, transparent, #d2d2d7, transparent); margin: 30px 0;"></div>
+
+            <h3>4. Quyền Truy Cập</h3>
+            <p>Ứng dụng có thể yêu cầu các quyền truy cập sau:</p>
+            <ul class="feature-list">
+                <li><strong>Thông báo:</strong> Gửi nhắc nhở sự kiện</li>
+                <li><strong>Thư viện ảnh:</strong> Chọn ảnh nền tùy chỉnh</li>
             </ul>
 
-            <h3>2. Cách chúng tôi sử dụng thông tin</h3>
-            <p>Chúng tôi sử dụng thông tin thu thập để:</p>
-            <ul class="feature-list">
-                <li>Cải thiện và phát triển ứng dụng</li>
-                <li>Khắc phục lỗi và nâng cao hiệu suất</li>
-                <li>Phân tích xu hướng sử dụng</li>
-            </ul>
+            <div style="height: 1px; background: linear-gradient(to right, transparent, #d2d2d7, transparent); margin: 30px 0;"></div>
 
-            <h3>3. Chia sẻ thông tin</h3>
-            <p>Chúng tôi không bán, cho thuê hoặc chia sẻ thông tin cá nhân của bạn với bên thứ ba, trừ khi:</p>
-            <ul class="feature-list">
-                <li>Có yêu cầu của pháp luật</li>
-                <li>Cần bảo vệ quyền và tài sản của chúng tôi</li>
-                <li>Bạn đã đồng ý trước đó</li>
-            </ul>
+            <h3>5. Bảo Mật</h3>
+            <p>Dữ liệu được lưu an toàn trên thiết bị, không chia sẻ với bên thứ ba.</p>
 
-            <h3>4. Bảo mật dữ liệu</h3>
-            <p>Chúng tôi áp dụng các biện pháp bảo mật phù hợp để bảo vệ thông tin của bạn khỏi truy cập trái phép, thay đổi, tiết lộ hoặc phá hủy.</p>
+            <div style="height: 1px; background: linear-gradient(to right, transparent, #d2d2d7, transparent); margin: 30px 0;"></div>
 
-            <h3>5. Quyền của bạn</h3>
+            <h3>6. Quyền Của Bạn</h3>
             <p>Bạn có quyền:</p>
             <ul class="feature-list">
-                <li>Truy cập thông tin cá nhân của mình</li>
-                <li>Yêu cầu xóa dữ liệu</li>
-                <li>Từ chối thu thập dữ liệu (có thể ảnh hưởng đến một số tính năng)</li>
+                <li>Xóa dữ liệu bất cứ lúc nào</li>
+                <li>Từ chối quyền truy cập</li>
+                <li>Gỡ cài đặt để xóa hoàn toàn</li>
             </ul>
 
-            <h3>6. Liên hệ</h3>
-            <p>Nếu bạn có câu hỏi về chính sách bảo mật, vui lòng liên hệ: <a href="mailto:support@countdownvn.app" style="color: #DA251D;">support@countdownvn.app</a></p>
+            <div style="height: 1px; background: linear-gradient(to right, transparent, #d2d2d7, transparent); margin: 30px 0;"></div>
+
+            <h3>7. Liên Hệ</h3>
+            <p>Nếu bạn có câu hỏi về chính sách bảo mật, vui lòng liên hệ:</p>
+            <p style="margin-top: 10px;">
+                <strong>📧 Email:</strong> <a href="mailto:quyetkl9x@gmail.com" style="color: #DA251D;">quyetkl9x@gmail.com</a>
+            </p>
         </div>
 
         <!-- Điều khoản sử dụng -->
-        <div class="section">
+        <div class="section" id="terms">
             <h2>Điều Khoản Sử Dụng</h2>
-            <p><strong>Cập nhật lần cuối:</strong> 2024</p>
+            <p><strong>Cập nhật lần cuối:</strong> 2025</p>
             
             <h3>1. Chấp nhận điều khoản</h3>
             <p>Bằng việc tải, cài đặt và sử dụng ứng dụng Đếm Ngược VN, bạn đồng ý với các điều khoản sử dụng này.</p>
@@ -360,7 +387,7 @@
             <p>Chúng tôi có quyền thay đổi điều khoản này bất cứ lúc nào. Việc tiếp tục sử dụng ứng dụng sau khi có thay đổi được xem là bạn chấp nhận điều khoản mới.</p>
 
             <h3>6. Liên hệ</h3>
-            <p>Nếu bạn có câu hỏi về điều khoản sử dụng, vui lòng liên hệ: <a href="mailto:support@countdownvn.app" style="color: #DA251D;">support@countdownvn.app</a></p>
+            <p>Nếu bạn có câu hỏi về điều khoản sử dụng, vui lòng liên hệ: <a href="mailto:quyetkl9x@gmail.com" style="color: #DA251D;">quyetkl9x@gmail.com</a></p>
         </div>
 
         <!-- Hướng dẫn sử dụng -->
@@ -397,7 +424,7 @@
     </div>
 
     <div class="footer">
-        <p>© 2024 Đếm Ngược VN. Tất cả quyền được bảo lưu.</p>
+        <p>© 2025 Đếm Ngược Việt Nam. Tất cả quyền được bảo lưu.</p>
         <p style="margin-top: 10px;">
             <a href="#privacy" style="color: #86868b; text-decoration: none; margin: 0 10px;">Chính sách Bảo mật</a>
             <a href="#terms" style="color: #86868b; text-decoration: none; margin: 0 10px;">Điều khoản Sử dụng</a>
